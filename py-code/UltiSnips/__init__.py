@@ -241,7 +241,7 @@ class _SnippetsFileParser(object):
             head, tail = self._line_head_tail()
             if head == "extends":
                 if tail:
-                    # order must be preserved! if a coffeescript file extends javascript 
+                    # order must be preserved! if a coffeescript file extends javascript
                     # it must be able to override javascript snippets
                     # the big question is whether extends should apply on all
                     # &runtimepath files ..
@@ -251,6 +251,7 @@ class _SnippetsFileParser(object):
                     for e in tail.split(','):
                         filename = os.path.join(os.path.dirname(self._fn), "%s.snippets" % e.strip())
                         p = _SnippetsFileParser(self._ft, filename, self._error_fun, None)
+                        p.parse()
                         self.snippets.extend(p.snippets)
                 else:
                     self._error("'extends' without file types")
