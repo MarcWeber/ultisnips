@@ -178,11 +178,11 @@ endf
 command! -nargs=? UltiSnipsEdit :call call(s:c.ChooseSnippetFileToEdit,empty([<f-args>]) ? [&filetype] : [<f-args>] )
 
 " Global Commands {{{
-let g:ultisnips_did_deprecated_warning_addfiletypes = 0
+let g:UltiSnipsDidWarnAddFiletypes = 0
 function! UltiSnipsAddFiletypes(filetypes)
-    if !g:ultisnips_did_deprecated_warning_addfiletypes
+    if !g:UltiSnipsDidWarnAddFiletypes
         echom "UltiSnipsAddFiletypes is deprecated, which snippets are used is determined by a function returning snippet files now."
-        let g:ultisnips_did_deprecated_warning_addfiletypes = 1
+        let g:UltiSnipsDidWarnAddFiletypes = 1
     endif
     return ""
 endfunction
