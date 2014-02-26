@@ -43,6 +43,9 @@ See doc/UltiSnips-Quickstart.txt
 
 WHY forking?
 -----------
+UPDATE: SirVer has made a lot of changes. Thus I must reevaluate whether its
+worth keeping this fork
+
 This work is based on the original repository `parent UltiSnips`_.
 
 What about feeding upstream?
