@@ -255,6 +255,9 @@ class _SnippetsFileParser(object):
                         self.snippets.extend(p.snippets)
                 else:
                     self._error("'extends' without file types")
+            elif head == "priority":
+                dummy = 1
+                # TODO: merge changes by SirVer, this just makes the error go away
             elif head in ("snippet", "global"):
                 self._parse_snippet()
             elif head == "clearsnippets":
