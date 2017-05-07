@@ -38,6 +38,7 @@ endf
 " Allow calling CompensateForPUM for those actions requiring it
 fun! UltiSnips#SetupM(c, s)
   call UltiSnips#Setup()
+  call UltiSnips#FileTypeChanged()
   if a:s == 'c'
     call CompensateForPUM()
   endif
