@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/run/current-system/sw/bin/python 
 # encoding: utf-8
 #
 # To execute this test requires two terminals, one for running Vim and one

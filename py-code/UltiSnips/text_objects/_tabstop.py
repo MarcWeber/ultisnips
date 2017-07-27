@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/run/current-system/sw/bin/python 
 # encoding: utf-8
 
 from UltiSnips.text_objects._base import EditableTextObject

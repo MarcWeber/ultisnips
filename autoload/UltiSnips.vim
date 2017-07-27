@@ -155,8 +155,8 @@ fun! CompensateForPUM()
 endfunction
 
 function! UltiSnips#FileTypeChanged()
-    call s:c.Py("UltiSnips_Manager.reset_buffer_filetypes()")
-    call s:c.Py("UltiSnips_Manager.add_buffer_filetypes('" . &ft . "')")
+    " call s:c.Py("UltiSnips_Manager.reset_buffer_filetypes()")
+    " call s:c.Py("UltiSnips_Manager.add_buffer_filetypes('" . &ft . "')")
     return ""
 endfunction
 
